@@ -4,7 +4,7 @@ import { memo } from 'react'
 import { github, sponsor, twitter } from '@/config'
 
 export default memo(() => {
-  const issuesUrl = 'https://github.com/ccbikai/ssh-ai-chat/issues'
+  const issuesUrl = 'https://github.com/miantiao-me/ssh-ai-chat/issues'
 
   const shortcuts = [
     { key: 'ESC', description: 'Navigate between modes' },

@@ -39,7 +39,7 @@ ssh username@chat.agi.li
 ```docker
 services:
   ssh-ai-chat:
-    image: ghcr.io/ccbikai/ssh-ai-chat
+    image: ghcr.io/miantiao-me/ssh-ai-chat
     ports:
       - 22:2222
     volumes:
@@ -124,4 +124,4 @@ pnpm run dev
 
 1. [在 Telegram 关注我](https://t.me/miantiao_me)
 2. [在 𝕏 上关注我](https://404.li/x)
-3. [在 GitHub 赞助我](https://github.com/sponsors/ccbikai)
+3. [在 GitHub 赞助我](https://github.com/sponsors/miantiao-me)
