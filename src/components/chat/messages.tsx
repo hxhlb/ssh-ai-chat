@@ -1,6 +1,6 @@
 import type { BoxProps } from 'ink'
 import type { ChatMessage } from '@/types/chat'
-import { Box } from 'ink'
+import { Box, Text } from 'ink'
 import TextInput from 'ink-text-input'
 import { useCallback, useState } from 'react'
 import { useGlobal } from '@/context/global'
@@ -84,7 +84,7 @@ export function MessageInput({ onSubmit, ...props }: MessageInputProps) {
   return (
     <Box
       flexShrink={0}
-      flexDirection="column"
+      flexDirection="row"
       borderStyle="single"
       borderColor="blue"
       borderLeft={false}
@@ -92,6 +92,7 @@ export function MessageInput({ onSubmit, ...props }: MessageInputProps) {
       borderBottom={false}
       {...props}
     >
+      <Text color="blue">{'> '}</Text>
       <TextInput
         focus={isInputFocused}
         value={query}
